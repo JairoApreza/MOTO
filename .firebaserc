@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "desarrolloweb-313822": {
+      "hosting": {
+        "app": [
+          "desarrolloweb-313822"
+        ]
+      }
+    }
+  }
+}

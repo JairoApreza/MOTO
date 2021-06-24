@@ -1,0 +1,37 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Registro Usuario Nuevo</ion-title>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form action="">
+        <ion-item lines="full">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="text" #email required placeholder="Example@gmail.com"></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" #password required placeholder=""></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+            <ion-label position="floating">Direccion</ion-label>
+            <ion-input type="text" #password required placeholder=""></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+            <ion-label position="floating">Numero de telefono</ion-label>
+            <ion-input type="text" #password required placeholder=""></ion-input>
+        </ion-item>
+
+        <ion-row>
+
+            <ion-col>
+                <ion-button type="submit" (click)="onRegister(email,password)" expand="block">
+                    Registrar
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

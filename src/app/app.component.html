@@ -1,3 +1,34 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+    <ion-menu menuId="main-menu" contentId="main">
+        <ion-content>
+            <div class="menu-header-bg">Menu</div>
+            <div class="header-content">
+                <img src="../assets/images/fotoPerfil.jpeg" alt="">
+                <ion-label>
+                    <h2>Usuario Registrado</h2>
+                    <p>Cliente</p>
+                </ion-label>
+            </div>
+            <div class="action-button">
+                <ion-list class="menu-items" lines="none">
+                    <ion-item>
+                        <ion-icon name="bicycle-outline"></ion-icon>Tus Viajes
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="wallet-outline" routerLink="#"></ion-icon>Formas de Pago
+                    </ion-item>
+                    <ion-item class="active">
+                        <ion-icon name="help-outline" routerLink="#"></ion-icon>Ayuda
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="settings-outline" routerLink='/configuracion'></ion-icon>Configuracion
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="exit-outline"></ion-icon>Salir
+                    </ion-item>
+                </ion-list>
+            </div>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

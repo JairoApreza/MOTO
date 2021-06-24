@@ -1,20 +1,40 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+
+    <ion-toolbar id="head">
+        <ion-title>
+            <center>
+                Motomandados
+            </center>
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">PAGINA EN BLANCO</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <div id="map"></div>
+    <div id="container">
+        <center>
+            <h4>Bienvenido</h4>
+            <ion-icon name="location-outline"></ion-icon>
+            <p></p><input type="text" placeholder="           Estas aqui">
+            <br><br>
+            <ion-icon name="bicycle-outline"></ion-icon>
+            <p></p><input type="text" placeholder="      ¿A donde vamos?">
+            <br><br><br>
+            <h4>Ubicaciones guardadas</h4>
+            <ion-icon name="add-outline">Agregar</ion-icon>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        </center>
+    </div>
+    <footer>
+        <div id="pie">
+            <p>Este es el pie de pagina</p>
+        </div>
+
+    </footer>
 </ion-content>
